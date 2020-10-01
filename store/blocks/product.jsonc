@@ -4,7 +4,8 @@
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
       "flex-layout.row#description",
-      "shelf.relatedProducts",
+      "flex-layout.row#specifications",
+      "flex-layout.row#relatedProducts",
       "product-reviews",
       "product-questions-and-answers"
     ]
@@ -21,6 +22,12 @@
     },
     "children": ["product-description"]
   },
+  "flex-layout.row#specifications": {
+    "props": {
+      "marginBottom": 7
+    },
+    "children": ["product-specifications"]
+  },
   "flex-layout.row#product-main": {
     "props": {
       "colGap": 7,
@@ -32,7 +39,12 @@
     },
     "children": ["flex-layout.col#stack", "flex-layout.col#right-col"]
   },
-
+  "flex-layout.row#relatedProducts": {
+    "children": ["shelf.relatedProducts"],
+    "props": {
+      "blockClass": "relatedProduct"
+    }
+  },
   "stack-layout": {
     "props": {
       "blockClass": "product"
@@ -74,7 +86,19 @@
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0
+      "rowGap": 0,
+      "price": {
+        "labelSellingPrice": null,
+        "showListPrice": true,
+        "showLabels": true,
+        "showInstallments": true,
+        "showSavings": true
+      },
+      "name": {
+        "showBrandName": true,
+        "showSku": false,
+        "showProductReference": false
+      }
     },
     "children": [
       "flex-layout.row#product-name",
@@ -82,6 +106,7 @@
       "product-separator",
       "product-identifier.product",
       "sku-selector",
+      "product-price",
       "product-quantity",
       "flex-layout.row#buy-button",
       "availability-subscriber",
@@ -89,44 +114,11 @@
       "share#default"
     ]
   },
-  "flex-layout.row#product-brand": {
-    "children": [
-      "flex-layout.row#product-detail-text",
-      "vtex.store-components:product-brand"
-    ]
-  },
-  "flex-layout.row#product-detail-text": {
-    "children": [
-      "rich-text#text"
-    ]
-  },
-  "rich-text#text": {
-    "props": {
-      "text": "Vendido por:"
-    }
-  },
-  "modal-header": {
-    "props": {
-      "showCloseButton": true
-    }
-  },
-
-  "rich-text#modal-content": {
-    "props": {
-      "text": "Términos y Condiciones"
-    }
-  },
-
-  "vtex.store-components:product-brand": {
-    "props": {
-      "displayMode": "logo"
-    }
-  },
   "flex-layout.row#product-name": {
     "props": {
       "marginBottom": 3
     },
-    "children": []
+    "children": ["product-name"]
   },
 
   "sku-selector": {
