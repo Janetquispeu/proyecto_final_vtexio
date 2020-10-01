@@ -1,17 +1,112 @@
 {
   "store.custom#about-us": {
     "blocks": [
-      "flex-layout.row#about-us"
+      "flex-layout.row#carousel",
+      "flex-layout.row#about-us",
+      "flex-layout.row#content",
+      "flex-layout.row#infoLeft",
+      "flex-layout.row#infoRight",
+      "flex-layout.row#work-us",
+      "flex-layout.row#content"
     ]
   },
   "flex-layout.row#about-us": {
     "children": [
-      "rich-text"
+      "rich-text#title1"
     ] 
   },
-  "rich-text": {
+  "rich-text#title1": {
     "props": {
-      "text": "About us"
+      "text": "About us",
+      "blockClass": "aboutUs"
+    }
+  },
+  "flex-layout.row#content": {
+    "children": [
+      "rich-text#paragraph"
+    ]
+  },
+  "rich-text#paragraph": {
+    "props": {
+      "blockClass": "aboutUsParagraph",
+      "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,"
+    }
+  },
+  "flex-layout.row#carousel": {
+    "children": ["list-context.image-list#demo"]
+  },
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "https://i.ibb.co/k543Zzb/you-x-ventures-Oalh2-Moj-Uuk-unsplash.jpg",
+          "description": "something something"
+        },
+        {
+          "image": "https://i.ibb.co/jVjDCv7/tyler-franta-ius-J25i-Yu1c-unsplash.jpg",
+          "description": "something something"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "sliderAbout"
+    }
+  },
+  "flex-layout.row#infoLeft": {
+    "children": [
+      "info-card#left"
+    ]
+  },
+  "flex-layout.row#infoRight": {
+    "children": [
+      "info-card#right"
+    ]
+  },
+  "info-card#left": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://i.ibb.co/k543Zzb/you-x-ventures-Oalh2-Moj-Uuk-unsplash.jpg",
+      "headline": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#right": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://i.ibb.co/jVjDCv7/tyler-franta-ius-J25i-Yu1c-unsplash.jpg",
+      "headline": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "flex-layout.row#work-us": {
+    "children": [
+      "rich-text#title2"
+    ]
+  },
+  "rich-text#title2": {
+    "props": {
+      "text": "Work us",
+      "blockClass": "workUs"
     }
   }
 }

@@ -27,14 +27,14 @@
   "flex-layout.col#menuheader": {
     "children": ["vtex.menu@2.x:menu#category-menu"],
     "props": {
-      "width": "15%",
+      "width": "30%",
       "verticalAlign": "middle"
     }
   },
   "flex-layout.col#search-desktop": {
     "children": ["search-bar"],
     "props": {
-      "width": "50%",
+      "width": "35%",
       "verticalAlign": "middle"
     }
   },

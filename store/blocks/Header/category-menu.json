@@ -4,7 +4,8 @@
       "experimentalOptimizeRendering": true
     },
     "children": [
-      "menu-item#shop"
+      "menu-item#shop",
+      "menu-item#about-us"
     ]
   },
   "menu-item#shop": {
@@ -27,6 +28,21 @@
         "mutedClassName": "c-action-primary"
       },
       "iconToTheRight": true
+    }
+  },
+  "menu-item#about-us": {
+    "props": {
+      "id": "menu-item-about-us",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about-us",
+        "noFollow": true,
+        "tagTitle": "About us",
+        "text": "About us"
+      }
     }
   }
 }

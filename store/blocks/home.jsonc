@@ -9,6 +9,7 @@
       "flex-layout.row#text3",
       "flex-layout.row#product-list",
       "search-result-layout.customQuery#home",
+      "flex-layout.row#info",
       "newsletter"
     ]
   },
@@ -123,6 +124,24 @@
       },
       "fullWidth": false,
       "blockClass": "shelf"
+    }
+  },
+  "flex-layout.row#info": {
+    "children": [
+      "info-card"
+    ]
+  },
+  "info-card": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://i.ibb.co/k543Zzb/you-x-ventures-Oalh2-Moj-Uuk-unsplash.jpg",
+      "headline": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
     }
   }
 }

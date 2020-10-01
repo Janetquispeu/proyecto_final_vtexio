@@ -1,6 +1,8 @@
-##Proyecto Final
+Proyecto Final
 
 Desarrollar una tienda en VTEX.IO conteniendo todas las pantallas listadas abajo:
+
+Workspace: janetquispe
 
 1. Home: https://janetquispe--tiendatest3.myvtex.com
 2. Product Page: https://janetquispe--tiendatest3.myvtex.com/cajaseleccion-vinos-de-autor-6-bot--750-ml-2200000039927/p
