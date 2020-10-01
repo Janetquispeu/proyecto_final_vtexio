@@ -1,0 +1,114 @@
+{
+  "flex-layout.row#1-desktop": {
+    "children": ["notification.bar#home"],
+    "props": { "fullWidth": true }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#menuheader",
+      "flex-layout.col#search-desktop",
+      "flex-layout.col#login",
+      "flex-layout.col#minicart"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "children": ["logo#desktop"],
+    "props": {
+      "width": "20%",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#menuheader": {
+    "children": ["vtex.menu@2.x:menu#mainheader"],
+    "props": {
+      "width": "10%",
+      "verticalAlign": "middle"
+    }
+  },
+  "vtex.menu@2.x:menu#mainheader": {
+    "children": ["menu-item#shop"],
+    "props": {
+      "verticalAlign": "middle"
+    }
+  },
+  "menu-item#shop": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      },
+      "iconProps": {
+        "id": "bnd-logo",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "activeClassName": "rebel-pink",
+        "mutedClassName": "c-action-primary"
+      },
+      "iconToTheRight": true
+    }
+  },
+  "flex-layout.col#search-desktop": {
+    "children": ["search-bar"],
+    "props": {
+      "width": "50%",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#login": {
+    "children": ["login#header"],
+    "props": {
+      "width": "10%",
+      "verticalAlign": "middle"
+    }
+  },
+  "login#header": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "flex-layout.col#minicart": {
+    "children": ["minicart.v2"],
+    "props": {
+      "width": "10%",
+      "verticalAlign": "middle"
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Loguarse",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "180"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "#QuedateEnCasa."
+    }
+  }
+}
