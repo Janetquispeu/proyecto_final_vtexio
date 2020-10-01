@@ -1,3 +1,8 @@
 .flexRow--carousel {
   margin-bottom: 50px;
 }
+
+.flexCol--filterColNavigator {
+  padding-left: 15px;
+  width: 180px;
+}

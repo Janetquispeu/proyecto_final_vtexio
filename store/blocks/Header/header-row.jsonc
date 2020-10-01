@@ -20,43 +20,15 @@
   "flex-layout.col#logo-desktop": {
     "children": ["logo#desktop"],
     "props": {
-      "width": "20%",
+      "width": "15%",
       "verticalAlign": "middle"
     }
   },
   "flex-layout.col#menuheader": {
-    "children": ["vtex.menu@2.x:menu#mainheader"],
+    "children": ["vtex.menu@2.x:menu#category-menu"],
     "props": {
-      "width": "10%",
+      "width": "15%",
       "verticalAlign": "middle"
-    }
-  },
-  "vtex.menu@2.x:menu#mainheader": {
-    "children": ["menu-item#shop"],
-    "props": {
-      "verticalAlign": "middle"
-    }
-  },
-  "menu-item#shop": {
-    "props": {
-      "id": "menu-item-shop",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "Shop",
-        "text": "Shop"
-      },
-      "iconProps": {
-        "id": "bnd-logo",
-        "size": 16,
-        "viewBox": "0 0 16 16",
-        "activeClassName": "rebel-pink",
-        "mutedClassName": "c-action-primary"
-      },
-      "iconToTheRight": true
     }
   },
   "flex-layout.col#search-desktop": {

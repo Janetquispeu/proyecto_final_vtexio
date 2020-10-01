@@ -6,8 +6,19 @@
       "flex-layout.row#product-list",
       "flex-layout.row#text2",
       "flex-layout.row#product-list",
+      "flex-layout.row#text3",
+      "flex-layout.row#product-list",
+      "search-result-layout.customQuery#home",
       "newsletter"
     ]
+  },
+  "search-result-layout.customQuery#home": {
+    "props": {
+      "querySchema": {
+        "skusFilter": "FIRST_AVAILABLE",
+        "simulationBehavior": "skip"
+      }
+    }
   },
   "flex-layout.row#slider": {
     "children": [
@@ -61,6 +72,9 @@
   "flex-layout.row#text2": {
     "children": ["rich-text#text2"]
   },
+  "flex-layout.row#text3": {
+    "children": ["rich-text#text3"]
+  },
   "flex-layout.row#product-list": {
     "children": [
       "list-context.product-list"
@@ -69,6 +83,13 @@
   "rich-text#text2": {
     "props": {
       "text": "Lo mejor",
+      "font": "t-heading-5",
+      "blockClass": "category"
+    }
+  },
+  "rich-text#text3": {
+    "props": {
+      "text": "Lo mejor de Nuevas Categorías",
       "font": "t-heading-5",
       "blockClass": "category"
     }
