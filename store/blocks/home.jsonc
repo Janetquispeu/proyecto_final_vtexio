@@ -1,15 +1,107 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "flex-layout.row#slider",
+      "flex-layout.row#text1",
+      "flex-layout.row#product-list",
+      "flex-layout.row#text2",
+      "flex-layout.row#product-list",
+      "newsletter"
     ]
   },
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "flex-layout.row#slider": {
+    "children": [
+      "slider-layout#text-test"
+    ],
+    "props": {
+      "blockClass": "carousel"
+    }
+  },
+  "slider-layout#text-test": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "height": 650
+    },
+    "children": ["image#1", "image#2", "image#3"]
+  },
+  "image#1": {
+    "props": {
+      "src": "https://i.ibb.co/PDpXxKr/deanna-alys-6-LBBOwk-Pzy-Q-unsplash.jpg",
+      "maxHeight": 400
+    }
+  },
+  "image#2": {
+    "props": {
+      "src": "https://i.ibb.co/x3xWfTB/charisse-kenion-dah-j-ZWgzx8-unsplash.jpg",
+      "maxHeight": 400
+    }
+  },
+  "image#3": {
+    "props": {
+      "src": "https://i.ibb.co/DQW2m9b/laura-chouette-f-f-Yv8-Tnaro-unsplash.jpg",
+      "maxHeight": 400
+    }
+  },
+  "flex-layout.row#text1": {
+    "children": ["rich-text#text1"]
+  },
+  "rich-text#text1": {
+    "props": {
+      "text": "Lo más visto",
+      "font": "t-heading-5",
+      "blockClass": "category"
+    }
+  },
+  "flex-layout.row#text2": {
+    "children": ["rich-text#text2"]
+  },
+  "flex-layout.row#product-list": {
+    "children": [
+      "list-context.product-list"
+    ]
+  },
+  "rich-text#text2": {
+    "props": {
+      "text": "Lo mejor",
+      "font": "t-heading-5",
+      "blockClass": "category"
+    }
+  },
+  "list-context.product-list": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "product-summary.shelf#home": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-summary-description",
+      "product-summary-space",
+      "product-summary-sku-selector",
+      "product-summary-buy-button"
+    ],
+    "props": {
+      "blockClass": "shelf-summary"
+    }
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "fullWidth": false,
+      "blockClass": "shelf"
     }
   }
 }

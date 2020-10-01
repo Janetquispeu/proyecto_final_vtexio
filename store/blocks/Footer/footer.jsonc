@@ -4,23 +4,74 @@
   },
   "footer-layout.desktop": { 
     "children": [
-      "flex-layout.row#footer"
+      "flex-layout.row#footer-desktop"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "footer",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#footer-desktop": {
+    "children": [
+      "flex-layout.row#social-networks",
+      "flex-layout.row#payment-methods"
     ]
+  },
+  "flex-layout.row#social-networks": {
+    "children": [
+      "rich-text#social-networks",
+      "social-networks"
+    ],
+    "props": {
+      "blockClass": "social-networks",
+      "width": "20%"
+    }
+  },
+  "rich-text#social-networks": {
+    "props": {
+      "text": "Siguenos en",
+      "textAlignment": "RIGHT",
+      "textPosition": "RIGHT"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        { "url": "https://facebook.com/foo", "name": "Facebook" },
+        { "url": "https://twitter.com/foo", "name": "Twitter" },
+        { "url": "https://www.youtube.com/user/VTEXTV", "name": "Youtube" }
+      ],
+      "showInColor": true
+    }
+  },
+  "flex-layout.row#payment-methods": {
+    "children": [
+      "rich-text#payment-methods",
+      "accepted-payment-methods"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "payment-methods",
+      "width": "20%"
+    }
+  },
+  "rich-text#payment-methods": {
+    "props": {
+      "text": "Métodos de pago",
+      "textAlignment": "RIGHT",
+      "textPosition": "RIGHT"
+    }
+  },
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": ["mastercard", "visa", "diners club"],
+      "showInColor": true
+    }
   },
   "footer-layout.mobile": { 
     "children": [
-      "flex-layout.row#footer"
+      "flex-layout.row#footer-desktop"
     ]
-  },
-  "flex-layout.row#footer": { 
-    "children": [
-      "image"
-    ]
-  },
-  "image": {
-    "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
-    }
   }
 }

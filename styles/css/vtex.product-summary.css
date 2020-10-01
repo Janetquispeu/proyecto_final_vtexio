@@ -1,0 +1,6 @@
+.element--shelf-summary {
+  margin: 5px 10px;
+}
+.element--shelf-summary:hover {
+  box-shadow: 0 14px 48px -28px #3c3c3c;
+}

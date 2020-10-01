@@ -1,0 +1,15 @@
+.container {
+  background: "#03044e";
+}
+
+.socialNetworkWrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.acceptedPaymentMethodContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
