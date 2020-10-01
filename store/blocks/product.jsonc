@@ -152,5 +152,16 @@
         "Pinterest": true
       }
     }
+  },
+  "store.not-found#product": {
+    "blocks": ["rich-text#not-found"]
+  },
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Producto no encontrado :(",
+      "font": "t-heading-1"
+    }
   }
 }
